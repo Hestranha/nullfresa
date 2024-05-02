@@ -76,7 +76,7 @@ const Page: React.FC = () => {
         <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors duration-300">Obtener Imagen</button>
         {error && <p className="text-red-500">{error}</p>}
       </form>
-      {vistaPrevia && (
+      {vistaPrevia && imageUrl && (
         <div className="flex flex-col w-2/4 gap-4">
           <p>Contenido de imagen:</p>
           <div className="flex flex-col gap-2">
