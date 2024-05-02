@@ -80,7 +80,7 @@ const Page: React.FC = () => {
         <div className="flex flex-col w-2/4 gap-4">
           <p>Contenido de imagen:</p>
           <div className="flex flex-col gap-2">
-            <a className="rounded-lg py-2 px-4 bg-red-400 text-white hover:bg-red-300 transition-colors duration-500 text-center" href={imageUrl} target="_blank">Descargar imagen entera</a>
+            {/* <p>{vistaPrevia}</p> */}
             <button className="rounded-lg py-2 px-4 bg-green-400 text-white hover:bg-green-300 transition-colors duration-500" onClick={handleDownload}>Descargar</button>
             <img src={vistaPrevia} alt="imagen-descargar" className="max-w-full h-auto" />
           </div>
