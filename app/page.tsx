@@ -23,7 +23,7 @@ const Page: React.FC = () => {
     }
 
     try {
-      const response = await fetch("https://cunve.vercel.app/api/imagen-instagram", {
+      const response = await fetch("https://cunve-backend.vercel.app/api/imagen-instagram", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
@@ -39,7 +39,7 @@ const Page: React.FC = () => {
     }
 
     try {
-      const response = await fetch("https://cunve.vercel.app/api/imagenfull-instagram", {
+      const response = await fetch("https://cunve-backend.vercel.app/api/imagenfull-instagram", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ url }),
