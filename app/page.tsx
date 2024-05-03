@@ -55,14 +55,14 @@ const Page: React.FC = () => {
           <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors duration-300">Obtener datos</button>
         </form>
         {error && <p className="text-red-500">{error}</p>}
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-4 w-full">
+          {archivoUrl && (
+            <div className="rounded-lg bg-gray-200 p-4 flex flex-col items-center gap-2 w-full h-96">
+              <img src={archivoUrl} alt="imagen-descargar" className="object-cover w-full h-full" />
+            </div>
+          )}
           {descargarUrl && (
             <a className="rounded-lg py-2 px-4 bg-green-400 text-white hover:bg-green-300 transition-colors duration-500" href={descargarUrl} target="_blank">Descargar</a>
-          )}
-          {archivoUrl && (
-            <div className="flex flex-col items-center gap-2">
-              <img src={archivoUrl} alt="imagen-descargar" className="w-3/4 h-auto" />
-            </div>
           )}
         </div>
       </div>
