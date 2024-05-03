@@ -88,7 +88,7 @@ export default function DescargarInstagram() {
                                 </React.Fragment>
                             ) : (
                                 <p className="font-bold tracking-widest">
-                                    ENCONTRAR
+                                    BUSCAR
                                 </p>
                             )}
                         </button>
