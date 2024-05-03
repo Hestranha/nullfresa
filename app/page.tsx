@@ -15,7 +15,7 @@ const Page: React.FC = () => {
     setDescargarUrl(null);
     setError("");
 
-    if (!url || !url.startsWith("https://www.instagram.com/p/")) {
+    if (!url || !url.startsWith("https://www.instagram.com/")) {
       setError("Por favor, ingresa una URL válida de Instagram.");
       return;
     }
