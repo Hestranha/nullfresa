@@ -74,35 +74,35 @@ const Page: React.FC = () => {
     }
   };
 
-
-
   return (
-    <main className="flex min-h-screen flex-col p-6 w-2/4">
-      <h1>Descargador de videos e imágenes de Instagram</h1>
-      <form onSubmit={handleSubmit} className="flex flex-col text-sm gap-4">
-        <input
-          type="text"
-          name="url"
-          placeholder="Ingresa la URL de Instagram"
-          value={url}
-          onChange={(event) => setUrl(event.target.value)}
-          className="border border-gray-300 rounded-md p-2"
-        />
-        <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors duration-300">Obtener Imagen</button>
+    <main className="flex items-center min-h-screen flex-col p-6 gap-2 w-full">
+      <div className="flex flex-col items-center gap-2 lg:w-2/6">
+        <h1>Descargador de videos e imágenes de Instagram</h1>
+        <form onSubmit={handleSubmit} className="flex flex-col w-full justify-center text-sm gap-4">
+          <input
+            type="text"
+            name="url"
+            placeholder="Ingresa la URL de Instagram"
+            value={url}
+            onChange={(event) => setUrl(event.target.value)}
+            className="border border-gray-300 rounded-md p-2"
+          />
+          <button type="submit" className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition-colors duration-300">Obtener Imagen</button>
+        </form>
         {error && <p className="text-red-500">{error}</p>}
-      </form>
-      {imageUrl && (
-        <a href={imageUrl} target="_blank">asdsad</a>
-      )}
-      {vistaPrevia && (
-        <div className="flex flex-col w-2/4 gap-4">
-          <p>Contenido de imagen:</p>
-          <div className="flex flex-col gap-2">
-            <button className="rounded-lg py-2 px-4 bg-green-400 text-white hover:bg-green-300 transition-colors duration-500" onClick={handleDownload}>Descargar</button>
-            <img src={vistaPrevia} alt="imagen-descargar" className="max-w-full h-auto" />
+        {imageUrl && (
+          <a href={imageUrl} target="_blank">asdsad</a>
+        )}
+        {vistaPrevia && (
+          <div className="flex flex-col items-center gap-4">
+            <p>Contenido de imagen:</p>
+            <div className="flex flex-col items-center gap-2">
+              <button className="rounded-lg py-2 px-4 bg-green-400 text-white hover:bg-green-300 transition-colors duration-500" onClick={handleDownload}>Descargar</button>
+              <img src={vistaPrevia} alt="imagen-descargar" className="w-3/4 h-auto" />
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </main>
   );
 };
