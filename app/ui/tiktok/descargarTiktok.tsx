@@ -3,29 +3,28 @@
 "use client";
 import React, { useState } from "react";
 
-export default function DescargarInstagram() {
+export default function DescargarTitok() {
     const [url, setUrl] = useState("");
-    const [archivoUrl, setArchivoUrl] = useState([]);
-    const [descargarUrl, setDescargarUrl] = useState([]);
+    const [videoUrl, setVideoUrl] = useState("");
+    const [imagenUrl, setImagenUrl] = useState("");
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
-    const [infoUrl, setInfoUrl] = useState("");
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        setArchivoUrl([]);
-        setDescargarUrl([]);
+        setVideoUrl("");
+        setImagenUrl("");
         setError("");
         setLoading(true);
 
-        if (!url || !url.startsWith("https://www.instagram.com/")) {
+        if (!url || !url.startsWith("https://www.tiktok.com/")) {
             setError("Por favor, ingresa una URL válida de Instagram.");
             setLoading(false);
             return;
         }
 
         try {
-            const response = await fetch("https://cunve-backend.vercel.app/api/imagenfull-instagram", {
+            const response = await fetch("https://cunve-backend.vercel.app/api/video-tiktok", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ url }),
@@ -36,19 +35,11 @@ export default function DescargarInstagram() {
             }
 
             const data = await response.json();
-            setArchivoUrl(data.archivoUrl);
-            setDescargarUrl(data.descargarUrl);
-            if (url.includes("/stories/") || url.includes("/story/")) {
-                setInfoUrl("Descargar historia")
-            } else if (url.includes("/p/") || url.includes("/posts/")) {
-                setInfoUrl("Descargar imagen")
-            } else if (url.includes("/tv/") || url.includes("/reel/")) {
-                setInfoUrl("Descargar video")
-            } else {
-                setInfoUrl("Descargar ?")
-            }
+            setVideoUrl(data.videoUrlTiktok);
+            setImagenUrl(data.imageSrcTiktok);
+
         } catch (error: any) {
-            setError("Error al obtener la imagen de Instagram: " + error.message);
+            setError("No se encontraron resultados .-.?");
         } finally {
             setLoading(false);
         }
@@ -58,7 +49,7 @@ export default function DescargarInstagram() {
         <div className="flex flex-col items-center w-full pt-6">
             <article className="flex flex-col justify-center p-6 bg-neutral-950 w-full gap-2 lg:gap-4" style={{ background: "linear-gradient(to right, #8a2be2, #ff69b4, #8a2be2)" }}>
                 <div>
-                    <h1 className="text-center font-bold text-2xl lg:text-3xl text-white tracking-wide">Descarga de Instagram</h1>
+                    <h1 className="text-center font-bold text-2xl lg:text-3xl text-white tracking-wide">Descarga de Titok</h1>
                     <p className="text-center text-gray-100">Videos, historias y publicaciones</p>
                 </div>
                 <div className="flex justify-center w-full">
@@ -96,19 +87,19 @@ export default function DescargarInstagram() {
                 </div>
                 {error &&
                     <div className="flex w-full justify-center">
-                        <p className="text-center border border-red-900 bg-red-500 lg:w-fit text-sm px-3 py-1 text-white">{error}</p>
+                        <p className="text-center bg-red-400 lg:w-fit text-sm px-3 py-1 text-white">{error}</p>
                     </div>
                 }
             </article>
             <div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center p-6 gap-4 w-full lg:w-2/3">
-                {archivoUrl.map((archivo, index) => (
-                    <div key={index} className="flex flex-col items-center gap-2 w-full">
-                        <img src={archivo} alt="imagen-descargar" className="rounded-md object-cover w-full h-full aspect-square" />
-                        {descargarUrl[index] && (
-                            <a key={`download-${index}`} className="flex justify-center rounded-md py-2 px-4 w-full bg-green-500 text-white hover:bg-green-300 transition-colors duration-500" href={descargarUrl[index]} target="_blank">{infoUrl}</a>
-                        )}
-                    </div>
-                ))}
+                <div className="flex flex-col items-center gap-2 w-full">
+                    <img
+                        src={imagenUrl}
+                        alt={`imagen`}
+                        className="rounded-md bg-gray-200 object-cover w-full h-full aspect-square"
+                    />
+                    <a className="flex justify-center rounded-md py-2 px-4 w-full bg-green-500 text-white hover:bg-green-300 transition-colors duration-500" href={videoUrl} target="_blank">Descargar</a>
+                </div>
             </div>
         </div>
     );

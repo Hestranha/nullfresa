@@ -1,5 +1,6 @@
 import React from "react";
-import DescargarInstagram from "./ui/inicio/descargar";
+import DescargarInstagram from "./ui/instagram/descargar";
+import DescargarTitok from "./ui/tiktok/descargarTiktok";
 
 const Page: React.FC = () => {
 
