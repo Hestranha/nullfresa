@@ -50,7 +50,7 @@ export default function DescargarTitok() {
             <article className="flex flex-col justify-center p-6 bg-neutral-950 w-full gap-2 lg:gap-4" style={{ background: "linear-gradient(to right, #000000, #1f1f1f, #000000)" }}>
                 <div>
                     <h1 className="text-center font-bold text-2xl lg:text-3xl text-white tracking-wide">Descarga de Tiktok</h1>
-                    <p className="text-center text-gray-100">Videos, historias y publicaciones</p>
+                    <p className="text-center text-gray-100">Videos sin marca de agua</p>
                 </div>
                 <div className="flex justify-center w-full">
                     <form onSubmit={handleSubmit} className="flex flex-col w-full lg:flex-row justify-center text-sm gap-2 lg:w-2/3">
