@@ -55,14 +55,14 @@ export default function DescargarInstagram() {
     };
 
     return (
-        <div className="flex flex-col items-center w-full pt-6 lg:w-2/3">
+        <div className="flex flex-col items-center w-full pt-6">
             <article className="flex flex-col justify-center items-center p-6 w-full gap-2 lg:gap-4" style={{ background: "linear-gradient(to right, #8a2be2, #ff69b4, #8a2be2)" }}>
                 <div>
                     <h1 className="text-center font-bold text-2xl lg:text-3xl text-white tracking-wide">Descargar de Instagram</h1>
                     <p className="text-center text-gray-100">Videos, historias y publicaciones</p>
                 </div>
-                <div className="flex justify-center w-full lg:w-4/5">
-                    <form onSubmit={handleSubmit} className="flex flex-col w-full lg:flex-row justify-center text-sm gap-2">
+                <div className="flex justify-center w-full">
+                    <form onSubmit={handleSubmit} className="flex flex-col w-full lg:flex-row justify-center text-sm gap-2 lg:w-2/3">
                         <div className="flex lg:w-[80%] relative">
                             <input
                                 type="text"
@@ -110,13 +110,14 @@ export default function DescargarInstagram() {
                     </div>
                 }
             </article>
-            <div className="grid grid-cols-1 lg:grid-cols-3 w-full justify-center items-center p-6 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center p-6 gap-4 w-full lg:w-2/3">
                 {archivoUrl.map((archivo, index) => (
                     <div key={index} className="flex flex-col items-center gap-2 w-full">
                         <img
                             src={archivo}
                             alt={`imagen-${index}`}
-                            className="rounded-md bg-gray-200 object-cover w-full h-full aspect-square"
+                            draggable="false"
+                            className="rounded-md bg-gray-200 select-none object-cover w-full h-full aspect-square"
                         />
                         {descargarUrl[index] && (
                             <a key={`download-${index}`} className="flex justify-center rounded-md py-2 px-4 w-full bg-green-500 text-white hover:bg-green-300 transition-colors duration-500" href={descargarUrl[index]} target="_blank" download={`nombre_personalizado_${index}.mp4`}>{infoUrl}</a>
