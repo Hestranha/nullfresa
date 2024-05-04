@@ -1,3 +1,3 @@
-import { Poppins } from 'next/font/google';
+import { Comfortaa } from 'next/font/google';
 
-export const comfortaa = Poppins({ weight: '400', subsets: ['latin'] });
+export const comfortaa = Comfortaa({ weight: '400', subsets: ['latin'] });
