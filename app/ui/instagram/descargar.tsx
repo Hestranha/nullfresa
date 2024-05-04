@@ -56,12 +56,12 @@ export default function DescargarInstagram() {
 
     return (
         <div className="flex flex-col items-center w-full pt-6 lg:w-2/3">
-            <article className="flex flex-col justify-center p-6 w-full gap-2 lg:gap-4" style={{ background: "linear-gradient(to right, #8a2be2, #ff69b4, #8a2be2)" }}>
+            <article className="flex flex-col justify-center items-center p-6 w-full gap-2 lg:gap-4" style={{ background: "linear-gradient(to right, #8a2be2, #ff69b4, #8a2be2)" }}>
                 <div>
                     <h1 className="text-center font-bold text-2xl lg:text-3xl text-white tracking-wide">Descargar de Instagram</h1>
                     <p className="text-center text-gray-100">Videos, historias y publicaciones</p>
                 </div>
-                <div className="flex justify-center w-full">
+                <div className="flex justify-center w-full lg:w-4/5">
                     <form onSubmit={handleSubmit} className="flex flex-col w-full lg:flex-row justify-center text-sm gap-2">
                         <div className="flex lg:w-[80%] relative">
                             <input
@@ -97,7 +97,7 @@ export default function DescargarInstagram() {
                                     </p>
                                 </React.Fragment>
                             ) : (
-                                <p className="font-bold tracking-widest">
+                                <p className="font-bold text-sm tracking-widest">
                                     BUSCAR
                                 </p>
                             )}
@@ -110,7 +110,7 @@ export default function DescargarInstagram() {
                     </div>
                 }
             </article>
-            <div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center p-6 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-3 w-full justify-center items-center p-6 gap-4">
                 {archivoUrl.map((archivo, index) => (
                     <div key={index} className="flex flex-col items-center gap-2 w-full">
                         <img
