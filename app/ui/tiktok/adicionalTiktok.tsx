@@ -104,7 +104,6 @@ export default function AdicionalTiktok() {
             <div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center p-6 gap-4 w-full lg:w-2/3">
                 <div className="flex flex-col items-center gap-2 w-full">
                     {imagenUrl && (
-
                         <img
                             src={imagenUrl}
                             alt={`imagen`}
