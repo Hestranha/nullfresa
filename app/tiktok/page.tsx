@@ -1,7 +1,10 @@
-import DescargarTiktok from "../ui/tiktok/descargarTiktok";
+import React from "react";
+import NavbarTiktok from "../ui/tiktok/navbar";
 
 export default function DeescargarTt() {
   return (
-    <DescargarTiktok />
+    <React.Fragment>
+      <NavbarTiktok />
+    </React.Fragment>
   );
 };

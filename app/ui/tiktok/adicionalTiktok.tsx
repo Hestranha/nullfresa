@@ -2,9 +2,8 @@
 /* eslint-disable jsx-a11y/alt-text */
 "use client";
 import React, { useState } from "react";
-import NavbarTiktok from "./navbar";
 
-export default function DescargarTitok() {
+export default function AdicionalTiktok() {
     const [url, setUrl] = useState("");
     const [videoUrl, setVideoUrl] = useState("");
     const [imagenUrl, setImagenUrl] = useState("");
@@ -50,8 +49,8 @@ export default function DescargarTitok() {
         <div className="flex flex-col items-center w-full">
             <article className="flex flex-col lg:rounded-lg justify-center p-6 bg-neutral-950 gap-2 lg:gap-4 w-full lg:w-2/3">
                 <div>
-                    <h1 className="text-center font-bold text-2xl lg:text-3xl text-white tracking-wide">Descarga de Tiktok</h1>
-                    <p className="text-center text-gray-100">Videos sin marca de agua</p>
+                    <h1 className="text-center font-bold text-2xl lg:text-3xl text-white tracking-wide">Ingresa usuario</h1>
+                    <p className="text-center text-gray-100">Todos los videos de un perfil</p>
                 </div>
                 <div className="flex justify-center w-full">
                     <form onSubmit={handleSubmit} className="flex flex-col w-full lg:flex-row justify-center text-sm gap-2 lg:w-2/3">
@@ -105,6 +104,7 @@ export default function DescargarTitok() {
             <div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center p-6 gap-4 w-full lg:w-2/3">
                 <div className="flex flex-col items-center gap-2 w-full">
                     {imagenUrl && (
+
                         <img
                             src={imagenUrl}
                             alt={`imagen`}
