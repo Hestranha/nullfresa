@@ -18,7 +18,7 @@ export default function DescargarTitok() {
         setError("");
         setLoading(true);
 
-        if (!url || !url.startsWith("https://www.tiktok.com/")) {
+        if (!url || !url.startsWith("https://www.tiktok.com/" || !url.startsWith("https://vm.tiktok.com/"))) {
             setError("Por favor, ingresa una URL válida de Tiktok.");
             setLoading(false);
             return;
