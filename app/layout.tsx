@@ -8,6 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <title>nullfresa</title>
       <body className={`${comfortaa.className} antialiased`}>{children}</body>
     </html>
   );

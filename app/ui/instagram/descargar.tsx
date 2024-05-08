@@ -55,8 +55,8 @@ export default function DescargarInstagram() {
     };
 
     return (
-        <div className="flex flex-col items-center w-full pt-6">
-            <article className="flex flex-col justify-center items-center p-6 w-full gap-2 lg:gap-4" style={{ background: "linear-gradient(to right, #8a2be2, #ff69b4, #8a2be2)" }}>
+        <div className="flex flex-col items-center w-full">
+            <article className="flex flex-col lg:rounded-lg justify-center items-center p-6 gap-2 w-full lg:w-2/3 lg:gap-4" style={{ background: "linear-gradient(to right, #8a2be2, #ff69b4, #8a2be2)" }}>
                 <div>
                     <h1 className="text-center font-bold text-2xl lg:text-3xl text-white tracking-wide">Descargar de Instagram</h1>
                     <p className="text-center text-gray-100">Videos, historias y publicaciones</p>
@@ -70,7 +70,7 @@ export default function DescargarInstagram() {
                                 placeholder="Ingresa la URL de Instagram"
                                 value={url}
                                 onChange={(event) => setUrl(event.target.value)}
-                                className="border text-sm w-full border-gray-300 rounded-md p-2 h-12"
+                                className="border text-sm w-full border-gray-300 pr-[5.5rem] rounded-md p-2 h-12"
                             />
                             <button
                                 className="absolute top-1/2 transform -translate-y-1/2 right-1 flex gap-0.5 bg-gray-100 text-black rounded-md items-center p-2 h-fit border border-gray-400 hover:bg-gray-200 transition-colors duration-300"

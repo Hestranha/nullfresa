@@ -50,7 +50,7 @@ export default function DescargarTitok() {
         <div className="flex flex-col items-center w-full">
             <article className="flex flex-col lg:rounded-lg justify-center p-6 bg-neutral-950 gap-2 lg:gap-4 w-full lg:w-2/3">
                 <div>
-                    <h1 className="text-center font-bold text-2xl lg:text-3xl text-white tracking-wide">Descarga de Tiktok</h1>
+                    <h1 className="text-center font-bold text-2xl lg:text-3xl text-white tracking-wide">Descarga un Tiktok</h1>
                     <p className="text-center text-gray-100">Videos sin marca de agua</p>
                 </div>
                 <div className="flex justify-center w-full">
@@ -89,7 +89,7 @@ export default function DescargarTitok() {
                                     </p>
                                 </React.Fragment>
                             ) : (
-                                <p className="text-sm tracking-widest">
+                                <p className="font-bold text-sm tracking-widest">
                                     BUSCAR
                                 </p>
                             )}

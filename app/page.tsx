@@ -5,7 +5,7 @@ import DescargarTitok from "./ui/tiktok/descargarTiktok";
 const Page: React.FC = () => {
 
   return (
-    <main className="flex items-center min-h-screen flex-col gap-2 bg-white w-full">
+    <main className="flex flex-col justify-center items-center min-h-screen p-6 gap-2 bg-[#ccc] w-full">
       <DescargarInstagram />
       <DescargarTitok />
     </main>
