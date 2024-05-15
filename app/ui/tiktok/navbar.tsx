@@ -9,10 +9,11 @@ export default function NavbarTiktok() {
     const handleRadioChange = (e: any) => {
         setCheckSection(e.target.nextSibling.textContent);
     };
+
     return (
-        <React.Fragment>
-            <nav className="flex justify-center">
-                <div className="radio-inputs select-none">
+        <article className="flex flex-col px-6 py-12 justify-center items-center gap-4 w-full">
+            <nav className="w-full md:w-2/4 xl:w-2/5 flex justify-center uppercase">
+                <div className="radio-inputs select-none gap-2">
                     <label className="radio">
                         <input type="radio" name="radio" checked={checkSection === "Individual"} onChange={handleRadioChange} />
                         <span className="name">Individual</span>
@@ -33,7 +34,7 @@ export default function NavbarTiktok() {
                     <AdicionalTiktok />
                 )
             }
-        </React.Fragment>
+        </article >
     );
 };
 

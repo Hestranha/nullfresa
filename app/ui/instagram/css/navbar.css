@@ -8,7 +8,7 @@
 
 .radio-inputs .radio {
     flex: 1 1 auto;
-    background-color: #959595;
+    background-color: #d899f7;
     text-align: center;
 }
 
@@ -22,17 +22,17 @@
     align-items: center;
     justify-content: center;
     padding: .5rem 0;
-    color: #000000;
-    background-color: #959595;
+    color: #4f0076;
+    background-color: #d899f7;
     transition: all .15s ease-in-out;
 }
 
 .radio-inputs .radio .name:hover {
-    color: #959595;
-    background-color: #000000;
+    color: #d899f7;
+    background-color: #4f0076;
 }
 
 .radio-inputs .radio input:checked+.name {
     color: #f3f1ff;
-    background-color: #000000;
+    background-color: #4f0076;
 }

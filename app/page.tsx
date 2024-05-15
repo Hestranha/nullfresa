@@ -1,5 +1,5 @@
 import React from "react";
-import DescargarInstagram from "./ui/instagram/descargar";
+import DescargarInstagram from "./ui/instagram/descargarInstagram";
 import DescargarTitok from "./ui/tiktok/descargarTiktok";
 import Link from "next/link";
 

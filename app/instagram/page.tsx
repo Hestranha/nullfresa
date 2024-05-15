@@ -1,8 +1,8 @@
-import DescargarInstagram from "../ui/instagram/descargar";
+import { NavInstagram } from "../ui/instagram/navbar";
 
 export default function DeescargarIg() {
   return (
-    <DescargarInstagram />
+    <NavInstagram />
   );
 };
 
