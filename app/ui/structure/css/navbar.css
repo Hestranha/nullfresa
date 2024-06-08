@@ -1,0 +1,21 @@
+.nav-principal {
+    background: #000000;
+    backdrop-filter: blur(2px);
+}
+
+.nav-effect {
+    color: #adadad;
+    transition: .3s all ease-in-out;
+}
+
+.nav-effect:focus {
+    color: #adadad;
+}
+
+.nav-effect:hover {
+    color: #ffffff;
+}
+
+.nav-select {
+    color: #ffffff !important;
+}

@@ -13,7 +13,7 @@ export default function NavbarTiktok() {
     return (
         <article className="flex flex-col px-6 py-12 justify-center items-center gap-4 w-full">
             <nav className="w-full md:w-2/4 xl:w-2/5 flex justify-center uppercase">
-                <div className="radio-inputs select-none gap-2">
+                <div className="radio-inputst select-none gap-2">
                     <label className="radio">
                         <input type="radio" name="radio" checked={checkSection === "Individual"} onChange={handleRadioChange} />
                         <span className="name">Individual</span>

@@ -1,5 +1,7 @@
 import "./ui/global.css"
 import { comfortaa } from "./ui/fonts";
+import NavBar from "./ui/structure/navbar";
+import Footer from "./ui/structure/footer";
 
 export default function RootLayout({
   children,
@@ -9,7 +11,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <title>nullfresa</title>
-      <body className={`${comfortaa.className} antialiased`}>{children}</body>
+      <body className={`${comfortaa.className} antialiased`}>
+        <NavBar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
