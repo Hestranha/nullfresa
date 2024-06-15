@@ -60,6 +60,13 @@ export default function NavBar() {
                 >
                     <ul className="mt-4 flex flex-col rounded-lg border bg-neutral-950 bg-opacity-60 p-1 font-medium rtl:space-x-reverse border-neutral-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 md:bg-transparent text-sm">
                         <li className='flex nav-effect md:p-0'>
+                            <Link href="/youtube" className="w-full px-3 py-2">
+                                <span className={`${pathname === '/youtube' ? 'nav-select' : ''}`}>
+                                    Youtube
+                                </span>
+                            </Link>
+                        </li>
+                        <li className='flex nav-effect md:p-0'>
                             <Link href="/instagram" className="w-full px-3 py-2">
                                 <span className={`${pathname === '/instagram' ? 'nav-select' : ''}`}>
                                     Instagram

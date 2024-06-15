@@ -1,0 +1,38 @@
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    font-size: 14px;
+}
+
+.radio-inputs .radio {
+    flex: 1 1 auto;
+    background-color: #d899f7;
+    text-align: center;
+}
+
+.radio-inputs .radio input {
+    display: none;
+}
+
+.radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 0;
+    color: #4f0076;
+    background-color: #d899f7;
+    transition: all .15s ease-in-out;
+}
+
+.radio-inputs .radio .name:hover {
+    color: #d899f7;
+    background-color: #4f0076;
+}
+
+.radio-inputs .radio input:checked+.name {
+    color: #f3f1ff;
+    background-color: #4f0076;
+}
