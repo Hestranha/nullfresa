@@ -115,7 +115,14 @@ export default function DescargarInstagram() {
                             className="rounded-md bg-gray-200 select-none object-cover w-full h-full aspect-square"
                         />
                         {descargarUrl[index] && (
-                            <a key={`download-${index}`} className="flex justify-center rounded-md py-2 px-4 w-full bg-green-500 text-white hover:bg-green-300 transition-colors duration-500" href={descargarUrl[index]} target="_blank" download={`nombre_personalizado_${index}.mp4`}>{infoUrl}</a>
+                            <a
+                                key={`download-${index}`}
+                                className="flex justify-center rounded-md py-2 px-4 w-full bg-green-500 text-white hover:bg-green-300 transition-colors duration-500"
+                                href={descargarUrl[index]}
+                                download={`nombre_personalizado_${index}.mp4`}
+                            >
+                                {infoUrl}
+                            </a>
                         )}
                     </div>
                 ))}

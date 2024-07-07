@@ -107,7 +107,7 @@ export default function DescargarTitok() {
                         />
                     )}
                     {videoUrl && (
-                        <a className="flex justify-center rounded-md py-2 px-4 w-full bg-green-500 text-white hover:bg-green-300 transition-colors duration-500" href={videoUrl} target="_blank">Descargar</a>
+                        <a className="flex justify-center rounded-md py-2 px-4 w-full bg-green-500 text-white hover:bg-green-300 transition-colors duration-500" href={videoUrl}>Descargar</a>
                     )}
                 </div>
             </div>
