@@ -11,7 +11,7 @@ export function NavInstagram() {
     };
 
     return (
-        <article className="flex flex-col px-6 py-12 justify-center items-center gap-4 w-full">
+        <article className="flex flex-col md:px-6 py-12 justify-center items-center gap-4 w-full">
             <nav className="w-full md:w-2/4 xl:w-2/5 flex justify-center uppercase">
                 <div className="radio-inputs select-none gap-2">
                     <label className="radio">

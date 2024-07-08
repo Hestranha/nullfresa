@@ -3,10 +3,35 @@
 "use client";
 import React, { useRef, useState } from "react";
 
+interface UrlSignature {
+    expires: number;
+    signature: string;
+}
+
+interface ImageVersions2 {
+    width: number;
+    height: number;
+    url: string;
+    url_signature: UrlSignature;
+}
+
+interface VideoVersions {
+    type: number;
+    width: number;
+    height: number;
+    url: string;
+    url_signature: UrlSignature;
+}
+
+interface Archivo {
+    image_versions2?: ImageVersions2;
+    video_versions?: VideoVersions;
+}
+
+
 export default function AdicionalInstagram() {
-    const [url, setUrl] = useState("");
-    const [archivoUrl, setArchivoUrl] = useState([]);
-    const [descargarUrl, setDescargarUrl] = useState([]);
+    const [username, setUsername] = useState("");
+    const [archivoUrl, setArchivoUrl] = useState<Archivo[]>([]);
     const [error, setError] = useState("");
     const [loading, setLoading] = useState(false);
     const inputUsuario = useRef<HTMLInputElement>(null);
@@ -15,37 +40,62 @@ export default function AdicionalInstagram() {
         event.preventDefault();
 
         setArchivoUrl([]);
-        setDescargarUrl([]);
         setError("");
         setLoading(true);
 
-        if (!url || !url.startsWith("https://www.instagram.com/stories/")) {
+        if (!username) {
             setError("Por favor, ingrese el nombre de usuario");
             setLoading(false);
             return;
         }
 
         try {
-            const response = await fetch("https://cunve-backend.vercel.app/api/imagenfull-instagram", {
+            const response = await fetch("https://cunve-backend.vercel.app/api/historias-instagram", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ url }),
+                body: JSON.stringify({ username }),
             });
 
             if (!response.ok) {
                 throw new Error("????");
             }
 
-            const data = await response.json();
-            setArchivoUrl(data.archivoUrl);
-            setDescargarUrl(data.descargarUrl);
+            let data: any[] = await response.json();
+            if (data.length > 0) {
+                data = data.map(item => {
+                    if (item.image_versions2 && item.image_versions2.url.startsWith("https://instagram")) {
+                        const encodedUrl = encodeURIComponent(item.image_versions2.url);
+                        const signatureUrl = encodeURIComponent(item.image_versions2.url_signature.signature);
+                        const expiresUrl = encodeURIComponent(item.image_versions2.url_signature.expires);
+                        const newUrl = `https://media.fastdl.app/get?uri=${encodedUrl}&filename=nullfresa&__sig=${signatureUrl}&__expires=${expiresUrl}&referer=https%3A%2F%2Fwww.instagram.com%2F`;
+                        item.image_versions2.url = newUrl;
+                    }
+                    return item;
+                });
+                setArchivoUrl(data);
+            } else {
+                setError("No se encontraron historias¿");
+            }
         } catch (error: any) {
             setError("No se encontraron resultados .-.?");
         } finally {
             setLoading(false);
         }
     };
-
+    const handleDownload = (url: string, filename: string) => {
+        fetch(url)
+            .then(response => response.blob())
+            .then(blob => {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = filename;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+            })
+            .catch(error => console.error('Error al descargar el archivo:', error));
+    };
     return (
         <div className="flex flex-col items-center w-full">
             <article className="flex flex-col lg:rounded-lg justify-center items-center p-6 gap-2 w-full lg:w-2/3 lg:gap-4" style={{ background: "linear-gradient(to right, #8a2be2, #ff69b4, #8a2be2)" }}>
@@ -59,7 +109,7 @@ export default function AdicionalInstagram() {
                             <input
                                 type="text"
                                 ref={inputUsuario}
-                                name="url"
+                                name="username"
                                 placeholder="Ingrese el usuario, Ejemplo: oliviarodrigo"
                                 className="border text-sm w-full border-gray-300 pr-[5.5rem] rounded-md p-2 h-12"
                             />
@@ -77,7 +127,7 @@ export default function AdicionalInstagram() {
                             className={`flex text-xs lg:w-[20%] justify-center bg-purple-800 text-white py-2 items-center px-4 rounded-md hover:bg-purple-900 transition-colors duration-300 ${loading ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}`}
                             disabled={loading}
                             style={{ cursor: loading ? "not-allowed" : "pointer" }}
-                            onClick={() => setUrl(`https://www.instagram.com/stories/${(inputUsuario as any).current.value}/`)}
+                            onClick={() => setUsername((inputUsuario as any).current.value)}
                         >
                             {loading ? (
                                 <svg className="w-7 h-7" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" style={{ shapeRendering: "auto", display: "block", background: "transparent" }}><g><circle strokeLinecap="round" fill="none" strokeDasharray="50.26548245743669 50.26548245743669" stroke="#ffffff" strokeWidth="8" r="32" cy="50" cx="50">
@@ -100,20 +150,43 @@ export default function AdicionalInstagram() {
             <div className="grid grid-cols-1 lg:grid-cols-3 justify-center items-center p-6 gap-4 w-full lg:w-2/3">
                 {archivoUrl.map((archivo, index) => (
                     <div key={index} className="flex flex-col items-center gap-2 w-full">
-                        <img
-                            src={archivo}
-                            alt={`imagen-${index}`}
-                            draggable="false"
-                            className="rounded-md bg-gray-200 w-full h-full"
-                        />
-                        {descargarUrl[index] && (
-                            <div className="flex max-lg:flex-col w-full gap-2">
-                                <a key={`download-${index}`} className="flex lg:w-1/2 justify-center rounded-md py-2 px-4 w-full bg-green-500 text-white hover:bg-green-300 transition-colors duration-500" href={descargarUrl[index]} target="_blank" download={`nombre_personalizado_${index}.mp4`}>Descargar</a>
-                                <button className="flex lg:w-1/2 justify-center rounded-md py-2 px-4 w-full bg-blue-500 text-white hover:bg-blue-300 transition-colors duration-500" >Visualizar</button>
-                            </div>
+                        {archivo.image_versions2 && (
+                            <img
+                                src={archivo.image_versions2.url}
+                                alt={`imagen-${index}`}
+                                draggable={false}
+                                className="rounded-md bg-gray-200 w-full h-full"
+                            />
                         )}
+                        {archivo.video_versions && (
+                            <video
+                                controls
+                                className="rounded-md bg-gray-200 w-full h-full"
+                            >
+                                <source src={archivo.video_versions.url} type="video/mp4" />
+                                Tu navegador no soporta video HTML5.
+                            </video>
+                        )}
+                        <div className="flex max-w-lg flex-col w-full gap-2">
+                            <button
+                                key={`download-${index}`}
+                                className="flex justify-center rounded-md py-2 px-4 w-full bg-green-500 text-white hover:bg-green-300 transition-colors duration-500"
+                                onClick={() => handleDownload(
+                                    archivo.video_versions
+                                        ? archivo.video_versions.url
+                                        : archivo.image_versions2
+                                            ? archivo.image_versions2.url
+                                            : '',
+                                    `nullfresa_ig_${index}.${archivo.video_versions ? 'mp4' : 'jpg'
+                                    }`
+                                )}
+                            >
+                                Descargar
+                            </button>
+                        </div>
                     </div>
                 ))}
+
             </div>
         </div>
     );
