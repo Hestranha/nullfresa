@@ -24,7 +24,7 @@ export default function NavBar() {
         <nav className="fixed w-full z-10 nav-principal">
             <div className="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between p-4 w-full lg:w-4/5 xl:w-4/6">
                 <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <span className="self-center whitespace-nowrap text-2xl md:text-2xl font-semibold text-white tracking-wide">
+                    <span className="self-center whitespace-nowrap text-2xl md:text-2xl text-white tracking-wide">
                         null<span className="text-red-600">fresa</span>
                     </span>
                 </Link>
@@ -59,6 +59,13 @@ export default function NavBar() {
                     id="navbar-default"
                 >
                     <ul className="mt-4 flex flex-col rounded-lg border bg-neutral-950 bg-opacity-60 p-1 font-medium rtl:space-x-reverse border-neutral-800 md:mt-0 md:flex-row md:space-x-8 md:border-0 md:p-0 md:bg-transparent text-sm">
+                        <li className='flex nav-effect md:p-0'>
+                            <Link href="/obtener" className="w-full px-3 py-2">
+                                <span className={`${pathname === '/obtener' ? 'nav-select' : ''}`}>
+                                    Revisión IG
+                                </span>
+                            </Link>
+                        </li>/
                         <li className='flex nav-effect md:p-0'>
                             <Link href="/youtube" className="w-full px-3 py-2">
                                 <span className={`${pathname === '/youtube' ? 'nav-select' : ''}`}>

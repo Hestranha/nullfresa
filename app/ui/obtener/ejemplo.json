@@ -1,0 +1,511 @@
+{
+  "no_te_siguen_verificadas": [
+    {
+      "usuario": "laufey",
+      "verificado": true
+    },
+    {
+      "usuario": "t1lol",
+      "verificado": true
+    },
+    {
+      "usuario": "oliviarodrigo",
+      "verificado": true
+    },
+    {
+      "usuario": "faker",
+      "verificado": true
+    },
+    {
+      "usuario": "taylorswift",
+      "verificado": true
+    },
+    {
+      "usuario": "germangarmendia",
+      "verificado": true
+    },
+    {
+      "usuario": "minecraft",
+      "verificado": true
+    },
+    {
+      "usuario": "jackstauber",
+      "verificado": true
+    },
+    {
+      "usuario": "clairo",
+      "verificado": true
+    },
+    {
+      "usuario": "albaricoque_acg",
+      "verificado": true
+    },
+    {
+      "usuario": "pillz4babi",
+      "verificado": true
+    },
+    {
+      "usuario": "lautarolpz",
+      "verificado": true
+    },
+    {
+      "usuario": "litkillah",
+      "verificado": true
+    },
+    {
+      "usuario": "ivan_buhaje",
+      "verificado": true
+    },
+    {
+      "usuario": "wos.ds3",
+      "verificado": true
+    },
+    {
+      "usuario": "froesmari",
+      "verificado": true
+    },
+    {
+      "usuario": "bear",
+      "verificado": true
+    },
+    {
+      "usuario": "paulolondra",
+      "verificado": true
+    }
+  ],
+  "no_te_siguen_no_verificadas": [
+    {
+      "usuario": "shindengg",
+      "verificado": false,
+      "foto": "https://instagram.fadb6-4.fna.fbcdn.net/v/t51.2885-19/450783302_1167521007836976_7217014913402709901_n.jpg?_nc_ht=instagram.fadb6-4.fna.fbcdn.net&_nc_cat=100&_nc_ohc=bM1vUxU0m4EQ7kNvgEZZZFJ&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYBgt4P0Rm2CEvfHN7QNkHcqi-y2fhuJmsJ36jzcBemBQg&oe=66A2B66D&_nc_sid=1e20d2",
+      "nombre": "ShindeN",
+      "descripcion": "Esports team by @litkillah & @ivan_buhaje 😈\nNuestras redes ⬇️",
+      "privado": false,
+      "expires": 1721604205,
+      "signature": "6BSaePhy3Gs79QeXqeYY8A"
+    },
+    {
+      "usuario": "jessikaaragon14",
+      "verificado": false,
+      "foto": "https://scontent-cdg4-2.cdninstagram.com/v/t51.2885-19/451393847_343960485425220_5650308133078823777_n.jpg?_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=100&_nc_ohc=Kw2wCLzligwQ7kNvgHddlyV&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYB89Z6Ofai_j3hM3xPKfwNe_ypiOKGsX_-l7Uo-CuhG_Q&oe=66A3474D&_nc_sid=1e20d2",
+      "nombre": "Jessica Aragón",
+      "descripcion": "",
+      "privado": true,
+      "expires": 1721604206,
+      "signature": "KfSfbTqRppD5p6xUaVPShw"
+    },
+    {
+      "usuario": "erick_ac19_z",
+      "verificado": false,
+      "foto": "https://instagram.fevn12-1.fna.fbcdn.net/v/t51.2885-19/430323811_273699489100784_3075857867590949443_n.jpg?_nc_ht=instagram.fevn12-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=G63iIBlCDNsQ7kNvgHpBvtg&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYB0MWVogTpm0P2tKYh5W0Sq2XmRjsJanSzHi5vfWsRQoQ&oe=66A349B1&_nc_sid=1e20d2",
+      "nombre": "Erick AC",
+      "descripcion": "",
+      "privado": false,
+      "expires": 1721604207,
+      "signature": "e2-vmWjWtJOFtvaecGIj5Q"
+    },
+    {
+      "usuario": "anita_rr29",
+      "verificado": false,
+      "foto": "https://scontent-fra5-1.cdninstagram.com/v/t51.2885-19/80898230_486235325409346_7476145513679552512_n.jpg?_nc_ht=scontent-fra5-1.cdninstagram.com&_nc_cat=110&_nc_ohc=KMVzQqG8JfIQ7kNvgHaY8BW&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYAYPy6-WCP9IeZWGr5OG5Gc0d6nlS7OY9zk4BGUZ1hXQA&oe=66A33D9A&_nc_sid=1e20d2",
+      "nombre": "Anita Ramos",
+      "descripcion": "",
+      "privado": false,
+      "expires": 1721604208,
+      "signature": "4B0_l6DAo6GkwTgGQHQ61g"
+    },
+    {
+      "usuario": "jose_chipana_c_03",
+      "verificado": false,
+      "foto": "https://scontent-ssn1-1.cdninstagram.com/v/t51.2885-19/126827035_3426180107502026_4405543805829234167_n.jpg?_nc_ht=scontent-ssn1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=rVNFtdw-fSkQ7kNvgHdbBXw&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYBpQveDMrP0eNBwmYvR94dI6eJ1ytWwwjSAQd5Z2yos3A&oe=66A34DD1&_nc_sid=1e20d2",
+      "nombre": "José Alfredo",
+      "descripcion": "Ing. Civil - UCSM 👷‍♂️\n📍Arequipa ,Peru 🇵🇪\n🎨",
+      "privado": false,
+      "expires": 1721604209,
+      "signature": "MR051H4RcWW5bo0P3ZYZiw"
+    },
+    {
+      "usuario": "szivem_roses",
+      "verificado": false,
+      "foto": "https://scontent-cdg4-2.cdninstagram.com/v/t51.2885-19/416087797_7055312521191837_6015077958224276857_n.jpg?_nc_ht=scontent-cdg4-2.cdninstagram.com&_nc_cat=109&_nc_ohc=MVQ7-0sJrqwQ7kNvgGmxBdm&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYAU3l4PYHkfyeeSL8GAPkzMQx-7rWtlKjOphzyGUzMVCQ&oe=66A36AF7&_nc_sid=1e20d2",
+      "nombre": "szivem",
+      "descripcion": "Todo tipo de flores eternas 🍃\nMás pedidos al info 📌\nEnvios a todo tacna 🍄",
+      "privado": false,
+      "expires": 1721604210,
+      "signature": "74LLVauhpoGbNw-nk1r1tg"
+    },
+    {
+      "usuario": "scuachi",
+      "verificado": false,
+      "foto": "https://scontent-nrt1-1.cdninstagram.com/v/t51.2885-19/449420794_454986634094205_3562193086050564628_n.jpg?_nc_ht=scontent-nrt1-1.cdninstagram.com&_nc_cat=109&_nc_ohc=SMyz4sl-zzYQ7kNvgHp_AsA&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYCKxXkuHZQBqWsHR0W80ypsinM7VPANDfSSUdFp5PAwlg&oe=66A33302&_nc_sid=1e20d2",
+      "nombre": "Anna Eliza",
+      "descripcion": "💖Me gustan el té y las tazas\n🫶🏻MX Guadalajara | Nayarit\n🎀Contacto: scuachinopalero@gmail.com\n💗🦢Aquí abajo juego videojuegos",
+      "privado": false,
+      "expires": 1721604211,
+      "signature": "5yfvbPkMuPBunvrH5idP7Q"
+    },
+    {
+      "usuario": "loliita.pe",
+      "verificado": false,
+      "foto": "https://scontent-mad2-1.cdninstagram.com/v/t51.2885-19/449028009_794127299516504_778372649056597413_n.jpg?_nc_ht=scontent-mad2-1.cdninstagram.com&_nc_cat=108&_nc_ohc=lEIL2UTmosoQ7kNvgG3KJOo&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYBEL4sDWtuEtqvD7m6EqHR0SW4-YPGnhxuUoO5sB4ze6Q&oe=66A353E5&_nc_sid=1e20d2",
+      "nombre": "LOLITA || 🐰💗",
+      "descripcion": "👛 Joyas y Accesorios✨\n❌ No se aceptan devoluciones ❌\n💸 Pago Efectivo/Yape/Plin\n📍Tacna, Perú",
+      "privado": false,
+      "expires": 1721604212,
+      "signature": "uLqPxO2RuaY40IyA-GBDeg"
+    },
+    {
+      "usuario": "its.rbb",
+      "verificado": false,
+      "foto": "https://instagram.fscl18-1.fna.fbcdn.net/v/t51.2885-19/400003148_243487361775498_1389377168898230765_n.jpg?_nc_ht=instagram.fscl18-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=y-UAIrye2XIQ7kNvgFkIoSm&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYDMA_leEuduzsdqU4GXxbuDOuAzoM96rxuVEX_xmlZcBg&oe=66A32844&_nc_sid=1e20d2",
+      "nombre": "𝕽𝖚𝖇𝖇𝖎",
+      "descripcion": "♐21",
+      "privado": true,
+      "expires": 1721604212,
+      "signature": "QsFZsl9tc2hEcOEj0vZNwA"
+    },
+    {
+      "usuario": "lalita.30",
+      "verificado": false,
+      "foto": "https://scontent-gru1-2.cdninstagram.com/v/t51.2885-19/341905885_667813351818236_6141030253537386088_n.jpg?_nc_ht=scontent-gru1-2.cdninstagram.com&_nc_cat=108&_nc_ohc=MFaNMnDOKdQQ7kNvgE8F4VF&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYA3_2BEMyk1Y_iW7KwnsnqfZRgegdUkgrppTDFGVN-erg&oe=66A339DD&_nc_sid=1e20d2",
+      "nombre": "Patty Palacios❤",
+      "descripcion": "",
+      "privado": true,
+      "expires": 1721604213,
+      "signature": "Cli1i1jGkPYDUDWohssAqQ"
+    },
+    {
+      "usuario": "ebcrly",
+      "verificado": false,
+      "foto": "https://scontent-gmp1-1.cdninstagram.com/v/t51.2885-19/451399018_491821406560178_1266424387832226281_n.jpg?_nc_ht=scontent-gmp1-1.cdninstagram.com&_nc_cat=102&_nc_ohc=UalSCd7YGkwQ7kNvgFf7otq&edm=AEF8tYYBAAAA&ccb=7-5&oh=00_AYBiuykCUDcX4_MuNNWYGVBBLRNnpRA5bi_NwUJ3qvaFlw&oe=66A34381&_nc_sid=1e20d2",
+      "nombre": "eberly",
+      "descripcion": "@drawrly",
+      "privado": false,
+      "expires": 1721604214,
+      "signature": "P4TJX0xS42Cd5ZQBDrswdA"
+    },
+    {
+      "usuario": "lucero_yare5",
+      "verificado": false
+    },
+    {
+      "usuario": "daniela.eue",
+      "verificado": false
+    },
+    {
+      "usuario": "lmariamedinal",
+      "verificado": false
+    },
+    {
+      "usuario": "xhexcha",
+      "verificado": false
+    },
+    {
+      "usuario": "vane_alania",
+      "verificado": false
+    },
+    {
+      "usuario": "yemilealexandra",
+      "verificado": false
+    },
+    {
+      "usuario": "silv.day.20",
+      "verificado": false
+    },
+    {
+      "usuario": "valenmedero_",
+      "verificado": false
+    },
+    {
+      "usuario": "nat_lozal",
+      "verificado": false
+    },
+    {
+      "usuario": "pau_aranay",
+      "verificado": false
+    },
+    {
+      "usuario": "jackeline022_",
+      "verificado": false
+    },
+    {
+      "usuario": "verminous__",
+      "verificado": false
+    },
+    {
+      "usuario": "lalothy",
+      "verificado": false
+    },
+    {
+      "usuario": "nav.alr",
+      "verificado": false
+    },
+    {
+      "usuario": "laurasrivera01",
+      "verificado": false
+    },
+    {
+      "usuario": "nayellyjhoana",
+      "verificado": false
+    }
+  ],
+  "no_sigues_verificadas": [],
+  "no_sigues_no_verificadas": [
+    {
+      "usuario": "houseofbeauty.pdm",
+      "verificado": false
+    },
+    {
+      "usuario": "maryori_fp99",
+      "verificado": false
+    },
+    {
+      "usuario": "_maria.zg",
+      "verificado": false
+    },
+    {
+      "usuario": "th.dago",
+      "verificado": false
+    },
+    {
+      "usuario": "yazminaalegria",
+      "verificado": false
+    },
+    {
+      "usuario": "rodrigollanos235",
+      "verificado": false
+    },
+    {
+      "usuario": "enger_frank44433",
+      "verificado": false
+    },
+    {
+      "usuario": "salaodowalmir",
+      "verificado": false
+    },
+    {
+      "usuario": "skynailspotsdam1",
+      "verificado": false
+    },
+    {
+      "usuario": "skynailspotsdam",
+      "verificado": false
+    },
+    {
+      "usuario": "gamer247272",
+      "verificado": false
+    },
+    {
+      "usuario": "mooda_pe",
+      "verificado": false
+    },
+    {
+      "usuario": "tyn_liu",
+      "verificado": false
+    },
+    {
+      "usuario": "milagr.valdez",
+      "verificado": false
+    },
+    {
+      "usuario": "azulgomez2327",
+      "verificado": false
+    },
+    {
+      "usuario": "chocapicosi",
+      "verificado": false
+    },
+    {
+      "usuario": "happyholly_442",
+      "verificado": false
+    },
+    {
+      "usuario": "jojoboutique2021",
+      "verificado": false
+    },
+    {
+      "usuario": "digo.stylelife_tacna",
+      "verificado": false
+    },
+    {
+      "usuario": "gerito.barbershop",
+      "verificado": false
+    },
+    {
+      "usuario": "no_leas_la_bio_5890",
+      "verificado": false
+    },
+    {
+      "usuario": "chocotejas_delicias_tacna",
+      "verificado": false
+    },
+    {
+      "usuario": "renato_chambilla",
+      "verificado": false
+    },
+    {
+      "usuario": "massiel_vc",
+      "verificado": false
+    },
+    {
+      "usuario": "talia_abii22",
+      "verificado": false
+    },
+    {
+      "usuario": "vale.ria8600",
+      "verificado": false
+    },
+    {
+      "usuario": "christiansirivera17",
+      "verificado": false
+    },
+    {
+      "usuario": "dani.lazo01",
+      "verificado": false
+    },
+    {
+      "usuario": "huaracalloapfata",
+      "verificado": false
+    },
+    {
+      "usuario": "itz_black_cherry",
+      "verificado": false
+    },
+    {
+      "usuario": "jairchata",
+      "verificado": false
+    },
+    {
+      "usuario": "_yamilet_sol18",
+      "verificado": false
+    },
+    {
+      "usuario": "losajinomen",
+      "verificado": false
+    },
+    {
+      "usuario": "hey_nami02",
+      "verificado": false
+    },
+    {
+      "usuario": "_brandon.om_",
+      "verificado": false
+    },
+    {
+      "usuario": "edwar_a_cruz",
+      "verificado": false
+    },
+    {
+      "usuario": "boluda_ara",
+      "verificado": false
+    },
+    {
+      "usuario": "daniela.castillaa",
+      "verificado": false
+    },
+    {
+      "usuario": "tiktok.oficia1",
+      "verificado": false
+    },
+    {
+      "usuario": "footballpass10n",
+      "verificado": false
+    },
+    {
+      "usuario": "nayelhycohaila",
+      "verificado": false
+    },
+    {
+      "usuario": "samanta.collins.7796",
+      "verificado": false
+    },
+    {
+      "usuario": "estefanyestefanya13",
+      "verificado": false
+    },
+    {
+      "usuario": "betsy.villanuevaa",
+      "verificado": false
+    },
+    {
+      "usuario": "lilamauricioo",
+      "verificado": false
+    },
+    {
+      "usuario": "alessandra_castillo_550",
+      "verificado": false
+    },
+    {
+      "usuario": "magdalenacruz1728",
+      "verificado": false
+    },
+    {
+      "usuario": "mg67115062018",
+      "verificado": false
+    },
+    {
+      "usuario": "firsstm",
+      "verificado": false
+    },
+    {
+      "usuario": "alicia.nv_14",
+      "verificado": false
+    },
+    {
+      "usuario": "silviamaquera8",
+      "verificado": false
+    },
+    {
+      "usuario": "mendoza.885",
+      "verificado": false
+    },
+    {
+      "usuario": "marqu_soto",
+      "verificado": false
+    },
+    {
+      "usuario": "kiarayerusa",
+      "verificado": false
+    },
+    {
+      "usuario": "williamnzero",
+      "verificado": false
+    },
+    {
+      "usuario": "klarensbear",
+      "verificado": false
+    },
+    {
+      "usuario": "milagrosparecruz",
+      "verificado": false
+    },
+    {
+      "usuario": "manueljccr14",
+      "verificado": false
+    },
+    {
+      "usuario": "guille_kdr",
+      "verificado": false
+    },
+    {
+      "usuario": "johan_agc20",
+      "verificado": false
+    },
+    {
+      "usuario": "mch.guillermo",
+      "verificado": false
+    },
+    {
+      "usuario": "gianella_colque",
+      "verificado": false
+    }
+  ],
+  "cantidad_no_te_siguen": 45,
+  "cantidad_no_te_siguen_verificadas": 18,
+  "cantidad_no_te_siguen_no_verificadas": 27,
+  "cantidad_no_sigues": 62,
+  "cantidad_no_sigues_verificadas": 0,
+  "cantidad_no_sigues_no_verificadas": 62,
+  "cantidad_seguidores": 87,
+  "cantidad_seguidos": 70
+}
